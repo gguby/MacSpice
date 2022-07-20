@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		504A988974F18A8F976B2FED /* Pods_MacSpice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECE66C18D8390AAF1366D48E /* Pods_MacSpice.framework */; };
+		B338E519287D2DA10021DE37 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E514287D2DA10021DE37 /* libcrypto.a */; };
+		B338E51B287D2DA10021DE37 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E516287D2DA10021DE37 /* libssl.a */; };
+		B338E523287D311C0021DE37 /* libspice-client-glib-2.0.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E522287D311C0021DE37 /* libspice-client-glib-2.0.8.dylib */; };
+		B338E525287D312C0021DE37 /* libspiceglue.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E524287D312C0021DE37 /* libspiceglue.0.dylib */; };
+		B338E526287D313C0021DE37 /* libspice-client-glib-2.0.8.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E522287D311C0021DE37 /* libspice-client-glib-2.0.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E528287D313E0021DE37 /* libspiceglue.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E524287D312C0021DE37 /* libspiceglue.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E53C287D5B220021DE37 /* libffi.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E529287D5B210021DE37 /* libffi.7.dylib */; };
+		B338E53D287D5B220021DE37 /* libgsttag-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E52A287D5B210021DE37 /* libgsttag-1.0.0.dylib */; };
+		B338E53E287D5B220021DE37 /* libgstbase-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E52B287D5B210021DE37 /* libgstbase-1.0.0.dylib */; };
+		B338E53F287D5B220021DE37 /* libgobject-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E52C287D5B210021DE37 /* libgobject-2.0.0.dylib */; };
+		B338E540287D5B220021DE37 /* libgstreamer-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E52D287D5B210021DE37 /* libgstreamer-1.0.0.dylib */; };
+		B338E541287D5B220021DE37 /* libintl.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E52E287D5B210021DE37 /* libintl.8.dylib */; };
+		B338E542287D5B220021DE37 /* liborc-0.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E52F287D5B210021DE37 /* liborc-0.4.0.dylib */; };
+		B338E543287D5B220021DE37 /* libz.1.2.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E530287D5B210021DE37 /* libz.1.2.11.dylib */; };
+		B338E544287D5B220021DE37 /* libgthread-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E531287D5B210021DE37 /* libgthread-2.0.0.dylib */; };
+		B338E545287D5B220021DE37 /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E532287D5B210021DE37 /* libcrypto.1.0.0.dylib */; };
+		B338E546287D5B220021DE37 /* libgio-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E533287D5B210021DE37 /* libgio-2.0.0.dylib */; };
+		B338E547287D5B220021DE37 /* libjpeg.8.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E534287D5B210021DE37 /* libjpeg.8.dylib */; };
+		B338E548287D5B220021DE37 /* libgstaudio-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E535287D5B210021DE37 /* libgstaudio-1.0.0.dylib */; };
+		B338E549287D5B220021DE37 /* libpixman-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E536287D5B210021DE37 /* libpixman-1.0.dylib */; };
+		B338E54A287D5B220021DE37 /* libgmodule-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E537287D5B210021DE37 /* libgmodule-2.0.0.dylib */; };
+		B338E54B287D5B220021DE37 /* libgstvideo-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E538287D5B210021DE37 /* libgstvideo-1.0.0.dylib */; };
+		B338E54C287D5B220021DE37 /* libglib-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E539287D5B220021DE37 /* libglib-2.0.0.dylib */; };
+		B338E54D287D5B220021DE37 /* libgstapp-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E53A287D5B220021DE37 /* libgstapp-1.0.0.dylib */; };
+		B338E54E287D5B220021DE37 /* libopus.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E53B287D5B220021DE37 /* libopus.0.dylib */; };
+		B338E54F287D5D400021DE37 /* libgstbase-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E52B287D5B210021DE37 /* libgstbase-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E550287D5D4E0021DE37 /* libffi.7.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E529287D5B210021DE37 /* libffi.7.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E551287D5D500021DE37 /* libcrypto.1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E532287D5B210021DE37 /* libcrypto.1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E552287D5D520021DE37 /* libgio-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E533287D5B210021DE37 /* libgio-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E553287D5D530021DE37 /* libglib-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E539287D5B220021DE37 /* libglib-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E554287D5D550021DE37 /* libgmodule-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E537287D5B210021DE37 /* libgmodule-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E555287D5D560021DE37 /* libgobject-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E52C287D5B210021DE37 /* libgobject-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E556287D5D580021DE37 /* libgstapp-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E53A287D5B220021DE37 /* libgstapp-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E557287D5D5A0021DE37 /* libgstaudio-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E535287D5B210021DE37 /* libgstaudio-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E558287D5D5E0021DE37 /* libgstreamer-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E52D287D5B210021DE37 /* libgstreamer-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E559287D5D600021DE37 /* libpixman-1.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E536287D5B210021DE37 /* libpixman-1.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E55A287D5D620021DE37 /* liborc-0.4.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E52F287D5B210021DE37 /* liborc-0.4.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E55B287D5D630021DE37 /* libopus.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E53B287D5B220021DE37 /* libopus.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E55C287D5D660021DE37 /* libjpeg.8.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E534287D5B210021DE37 /* libjpeg.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E55D287D5D670021DE37 /* libgthread-2.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E531287D5B210021DE37 /* libgthread-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E55E287D5D690021DE37 /* libgstvideo-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E538287D5B210021DE37 /* libgstvideo-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E55F287D5D6A0021DE37 /* libgsttag-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E52A287D5B210021DE37 /* libgsttag-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E560287D5D6C0021DE37 /* libintl.8.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E52E287D5B210021DE37 /* libintl.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E561287D5D6F0021DE37 /* libz.1.2.11.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E530287D5B210021DE37 /* libz.1.2.11.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E563287D61390021DE37 /* libssl.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B338E562287D61390021DE37 /* libssl.1.0.0.dylib */; };
+		B338E564287D61470021DE37 /* libssl.1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = B338E562287D61390021DE37 /* libssl.1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B338E568287E84B60021DE37 /* GvRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E566287E84B60021DE37 /* GvRenderer.swift */; };
+		B338E569287E84B60021DE37 /* GvMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E567287E84B60021DE37 /* GvMainView.swift */; };
+		B338E56E2880EE7C0021DE37 /* IntroVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B338E56D2880EE7C0021DE37 /* IntroVC.storyboard */; };
+		B338E5702880EF920021DE37 /* IntroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E56F2880EF920021DE37 /* IntroVC.swift */; };
+		B338E5722880F1F70021DE37 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E5712880F1F70021DE37 /* WebVC.swift */; };
+		B338E5742880F2010021DE37 /* WebVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B338E5732880F2010021DE37 /* WebVC.storyboard */; };
+		B338E5802880F2D20021DE37 /* NSView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E5772880F2D20021DE37 /* NSView+Extension.swift */; };
+		B338E5812880F2D20021DE37 /* NSViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E5782880F2D20021DE37 /* NSViewController+Extension.swift */; };
+		B338E5822880F2D20021DE37 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E5792880F2D20021DE37 /* String+Extension.swift */; };
+		B338E5832880F2D20021DE37 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E57A2880F2D20021DE37 /* UserDefaults+Extension.swift */; };
+		B338E5842880F2D20021DE37 /* GvHttpComm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E57C2880F2D20021DE37 /* GvHttpComm.swift */; };
+		B338E5852880F2D20021DE37 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E57D2880F2D20021DE37 /* NetworkAPI.swift */; };
+		B338E5862880F2D20021DE37 /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E57E2880F2D20021DE37 /* SocketManager.swift */; };
+		B338E5872880F2D20021DE37 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E57F2880F2D20021DE37 /* Util.swift */; };
+		B338E5892880F3580021DE37 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B338E5882880F3580021DE37 /* Podfile */; };
+		B338E58B2880F4450021DE37 /* CHAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E58A2880F4450021DE37 /* CHAlertView.swift */; };
+		B338E58D2880FDE70021DE37 /* SpiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E58C2880FDE70021DE37 /* SpiceVC.swift */; };
+		B338E58F2880FDEF0021DE37 /* SpiceVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B338E58E2880FDEF0021DE37 /* SpiceVC.storyboard */; };
+		B338E5912880FEA40021DE37 /* RdpApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E5902880FEA40021DE37 /* RdpApiManager.swift */; };
+		B338E5942880FF040021DE37 /* ConnectSettingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E5932880FF040021DE37 /* ConnectSettingModel.swift */; };
+		B338E59728852E6F0021DE37 /* SpiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B338E59628852E6F0021DE37 /* SpiceView.swift */; };
+		B3EE84512875624D00732129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE84502875624D00732129 /* AppDelegate.swift */; };
+		B3EE84532875624D00732129 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EE84522875624D00732129 /* ViewController.swift */; };
+		B3EE84552875624E00732129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EE84542875624E00732129 /* Assets.xcassets */; };
+		B3EE84582875624E00732129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3EE84562875624E00732129 /* Main.storyboard */; };
+		B3EE849D2875663F00732129 /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EE848C2875663F00732129 /* CommonUtil.m */; };
+		B3EE849F2875663F00732129 /* draw.c in Sources */ = {isa = PBXBuildFile; fileRef = B3EE84902875663F00732129 /* draw.c */; };
+		B3EE84A02875663F00732129 /* spice.c in Sources */ = {isa = PBXBuildFile; fileRef = B3EE84932875663F00732129 /* spice.c */; };
+		B3EE84A12875663F00732129 /* io_interface.c in Sources */ = {isa = PBXBuildFile; fileRef = B3EE849A2875663F00732129 /* io_interface.c */; };
+		B3EE84A42875669C00732129 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3EE84A32875669C00732129 /* OpenGL.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B338E527287D313D0021DE37 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B338E55A287D5D620021DE37 /* liborc-0.4.0.dylib in Embed Libraries */,
+				B338E528287D313E0021DE37 /* libspiceglue.0.dylib in Embed Libraries */,
+				B338E558287D5D5E0021DE37 /* libgstreamer-1.0.0.dylib in Embed Libraries */,
+				B338E550287D5D4E0021DE37 /* libffi.7.dylib in Embed Libraries */,
+				B338E55F287D5D6A0021DE37 /* libgsttag-1.0.0.dylib in Embed Libraries */,
+				B338E55C287D5D660021DE37 /* libjpeg.8.dylib in Embed Libraries */,
+				B338E564287D61470021DE37 /* libssl.1.0.0.dylib in Embed Libraries */,
+				B338E561287D5D6F0021DE37 /* libz.1.2.11.dylib in Embed Libraries */,
+				B338E55E287D5D690021DE37 /* libgstvideo-1.0.0.dylib in Embed Libraries */,
+				B338E526287D313C0021DE37 /* libspice-client-glib-2.0.8.dylib in Embed Libraries */,
+				B338E553287D5D530021DE37 /* libglib-2.0.0.dylib in Embed Libraries */,
+				B338E552287D5D520021DE37 /* libgio-2.0.0.dylib in Embed Libraries */,
+				B338E556287D5D580021DE37 /* libgstapp-1.0.0.dylib in Embed Libraries */,
+				B338E551287D5D500021DE37 /* libcrypto.1.0.0.dylib in Embed Libraries */,
+				B338E559287D5D600021DE37 /* libpixman-1.0.dylib in Embed Libraries */,
+				B338E560287D5D6C0021DE37 /* libintl.8.dylib in Embed Libraries */,
+				B338E54F287D5D400021DE37 /* libgstbase-1.0.0.dylib in Embed Libraries */,
+				B338E55D287D5D670021DE37 /* libgthread-2.0.0.dylib in Embed Libraries */,
+				B338E554287D5D550021DE37 /* libgmodule-2.0.0.dylib in Embed Libraries */,
+				B338E55B287D5D630021DE37 /* libopus.0.dylib in Embed Libraries */,
+				B338E557287D5D5A0021DE37 /* libgstaudio-1.0.0.dylib in Embed Libraries */,
+				B338E555287D5D560021DE37 /* libgobject-2.0.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2A4AA4426F46C1C398AAE313 /* Pods-MacSpice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacSpice.release.xcconfig"; path = "Target Support Files/Pods-MacSpice/Pods-MacSpice.release.xcconfig"; sourceTree = "<group>"; };
+		796A3C10823689B1E9EC5371 /* Pods-MacSpice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MacSpice.debug.xcconfig"; path = "Target Support Files/Pods-MacSpice/Pods-MacSpice.debug.xcconfig"; sourceTree = "<group>"; };
+		B338E514287D2DA10021DE37 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		B338E516287D2DA10021DE37 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl.a; sourceTree = "<group>"; };
+		B338E522287D311C0021DE37 /* libspice-client-glib-2.0.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libspice-client-glib-2.0.8.dylib"; sourceTree = "<group>"; };
+		B338E524287D312C0021DE37 /* libspiceglue.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libspiceglue.0.dylib; sourceTree = "<group>"; };
+		B338E529287D5B210021DE37 /* libffi.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libffi.7.dylib; sourceTree = "<group>"; };
+		B338E52A287D5B210021DE37 /* libgsttag-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgsttag-1.0.0.dylib"; sourceTree = "<group>"; };
+		B338E52B287D5B210021DE37 /* libgstbase-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgstbase-1.0.0.dylib"; sourceTree = "<group>"; };
+		B338E52C287D5B210021DE37 /* libgobject-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgobject-2.0.0.dylib"; sourceTree = "<group>"; };
+		B338E52D287D5B210021DE37 /* libgstreamer-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgstreamer-1.0.0.dylib"; sourceTree = "<group>"; };
+		B338E52E287D5B210021DE37 /* libintl.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libintl.8.dylib; sourceTree = "<group>"; };
+		B338E52F287D5B210021DE37 /* liborc-0.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "liborc-0.4.0.dylib"; sourceTree = "<group>"; };
+		B338E530287D5B210021DE37 /* libz.1.2.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libz.1.2.11.dylib; sourceTree = "<group>"; };
+		B338E531287D5B210021DE37 /* libgthread-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgthread-2.0.0.dylib"; sourceTree = "<group>"; };
+		B338E532287D5B210021DE37 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
+		B338E533287D5B210021DE37 /* libgio-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgio-2.0.0.dylib"; sourceTree = "<group>"; };
+		B338E534287D5B210021DE37 /* libjpeg.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libjpeg.8.dylib; sourceTree = "<group>"; };
+		B338E535287D5B210021DE37 /* libgstaudio-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgstaudio-1.0.0.dylib"; sourceTree = "<group>"; };
+		B338E536287D5B210021DE37 /* libpixman-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libpixman-1.0.dylib"; sourceTree = "<group>"; };
+		B338E537287D5B210021DE37 /* libgmodule-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgmodule-2.0.0.dylib"; sourceTree = "<group>"; };
+		B338E538287D5B210021DE37 /* libgstvideo-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgstvideo-1.0.0.dylib"; sourceTree = "<group>"; };
+		B338E539287D5B220021DE37 /* libglib-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libglib-2.0.0.dylib"; sourceTree = "<group>"; };
+		B338E53A287D5B220021DE37 /* libgstapp-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libgstapp-1.0.0.dylib"; sourceTree = "<group>"; };
+		B338E53B287D5B220021DE37 /* libopus.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libopus.0.dylib; sourceTree = "<group>"; };
+		B338E562287D61390021DE37 /* libssl.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libssl.1.0.0.dylib; sourceTree = "<group>"; };
+		B338E566287E84B60021DE37 /* GvRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GvRenderer.swift; sourceTree = "<group>"; };
+		B338E567287E84B60021DE37 /* GvMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GvMainView.swift; sourceTree = "<group>"; };
+		B338E56A287E876B0021DE37 /* MacSpice-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacSpice-Bridging-Header.h"; sourceTree = "<group>"; };
+		B338E56D2880EE7C0021DE37 /* IntroVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IntroVC.storyboard; sourceTree = "<group>"; };
+		B338E56F2880EF920021DE37 /* IntroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroVC.swift; sourceTree = "<group>"; };
+		B338E5712880F1F70021DE37 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		B338E5732880F2010021DE37 /* WebVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebVC.storyboard; sourceTree = "<group>"; };
+		B338E5772880F2D20021DE37 /* NSView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Extension.swift"; sourceTree = "<group>"; };
+		B338E5782880F2D20021DE37 /* NSViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSViewController+Extension.swift"; sourceTree = "<group>"; };
+		B338E5792880F2D20021DE37 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		B338E57A2880F2D20021DE37 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		B338E57C2880F2D20021DE37 /* GvHttpComm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GvHttpComm.swift; sourceTree = "<group>"; };
+		B338E57D2880F2D20021DE37 /* NetworkAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
+		B338E57E2880F2D20021DE37 /* SocketManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		B338E57F2880F2D20021DE37 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		B338E5882880F3580021DE37 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B338E58A2880F4450021DE37 /* CHAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHAlertView.swift; sourceTree = "<group>"; };
+		B338E58C2880FDE70021DE37 /* SpiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceVC.swift; sourceTree = "<group>"; };
+		B338E58E2880FDEF0021DE37 /* SpiceVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SpiceVC.storyboard; sourceTree = "<group>"; };
+		B338E5902880FEA40021DE37 /* RdpApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RdpApiManager.swift; sourceTree = "<group>"; };
+		B338E5932880FF040021DE37 /* ConnectSettingModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectSettingModel.swift; sourceTree = "<group>"; };
+		B338E595288101690021DE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B338E59628852E6F0021DE37 /* SpiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceView.swift; sourceTree = "<group>"; };
+		B3EE844D2875624D00732129 /* MacSpice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacSpice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3EE84502875624D00732129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3EE84522875624D00732129 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3EE84542875624E00732129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3EE84572875624E00732129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3EE84592875624E00732129 /* MacSpice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacSpice.entitlements; sourceTree = "<group>"; };
+		B3EE848C2875663F00732129 /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
+		B3EE848D2875663F00732129 /* native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = native.h; sourceTree = "<group>"; };
+		B3EE848F2875663F00732129 /* spice-mono-glue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "spice-mono-glue.h"; sourceTree = "<group>"; };
+		B3EE84902875663F00732129 /* draw.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = draw.c; sourceTree = "<group>"; };
+		B3EE84912875663F00732129 /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+		B3EE84922875663F00732129 /* io_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io_interface.h; sourceTree = "<group>"; };
+		B3EE84932875663F00732129 /* spice.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spice.c; sourceTree = "<group>"; };
+		B3EE84962875663F00732129 /* SsmDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SsmDelegate.h; sourceTree = "<group>"; };
+		B3EE84972875663F00732129 /* ExtSsmLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtSsmLib.h; sourceTree = "<group>"; };
+		B3EE84982875663F00732129 /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
+		B3EE84992875663F00732129 /* spice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spice.h; sourceTree = "<group>"; };
+		B3EE849A2875663F00732129 /* io_interface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = io_interface.c; sourceTree = "<group>"; };
+		B3EE849B2875663F00732129 /* draw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = draw.h; sourceTree = "<group>"; };
+		B3EE84A32875669C00732129 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		B3EE84A52875741000732129 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		ECE66C18D8390AAF1366D48E /* Pods_MacSpice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MacSpice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3EE844A2875624D00732129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B338E525287D312C0021DE37 /* libspiceglue.0.dylib in Frameworks */,
+				B338E523287D311C0021DE37 /* libspice-client-glib-2.0.8.dylib in Frameworks */,
+				B338E53E287D5B220021DE37 /* libgstbase-1.0.0.dylib in Frameworks */,
+				B338E545287D5B220021DE37 /* libcrypto.1.0.0.dylib in Frameworks */,
+				B338E548287D5B220021DE37 /* libgstaudio-1.0.0.dylib in Frameworks */,
+				B338E519287D2DA10021DE37 /* libcrypto.a in Frameworks */,
+				B338E546287D5B220021DE37 /* libgio-2.0.0.dylib in Frameworks */,
+				B338E542287D5B220021DE37 /* liborc-0.4.0.dylib in Frameworks */,
+				B338E549287D5B220021DE37 /* libpixman-1.0.dylib in Frameworks */,
+				B338E544287D5B220021DE37 /* libgthread-2.0.0.dylib in Frameworks */,
+				B3EE84A42875669C00732129 /* OpenGL.framework in Frameworks */,
+				B338E54B287D5B220021DE37 /* libgstvideo-1.0.0.dylib in Frameworks */,
+				B338E54A287D5B220021DE37 /* libgmodule-2.0.0.dylib in Frameworks */,
+				B338E51B287D2DA10021DE37 /* libssl.a in Frameworks */,
+				B338E543287D5B220021DE37 /* libz.1.2.11.dylib in Frameworks */,
+				B338E53C287D5B220021DE37 /* libffi.7.dylib in Frameworks */,
+				B338E54D287D5B220021DE37 /* libgstapp-1.0.0.dylib in Frameworks */,
+				B338E541287D5B220021DE37 /* libintl.8.dylib in Frameworks */,
+				B338E54C287D5B220021DE37 /* libglib-2.0.0.dylib in Frameworks */,
+				B338E540287D5B220021DE37 /* libgstreamer-1.0.0.dylib in Frameworks */,
+				B338E563287D61390021DE37 /* libssl.1.0.0.dylib in Frameworks */,
+				B338E53D287D5B220021DE37 /* libgsttag-1.0.0.dylib in Frameworks */,
+				B338E54E287D5B220021DE37 /* libopus.0.dylib in Frameworks */,
+				B338E547287D5B220021DE37 /* libjpeg.8.dylib in Frameworks */,
+				B338E53F287D5B220021DE37 /* libgobject-2.0.0.dylib in Frameworks */,
+				504A988974F18A8F976B2FED /* Pods_MacSpice.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57B805993D23B35B99E862B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				796A3C10823689B1E9EC5371 /* Pods-MacSpice.debug.xcconfig */,
+				2A4AA4426F46C1C398AAE313 /* Pods-MacSpice.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B338E513287D2DA10021DE37 /* LIB */ = {
+			isa = PBXGroup;
+			children = (
+				B338E562287D61390021DE37 /* libssl.1.0.0.dylib */,
+				B338E532287D5B210021DE37 /* libcrypto.1.0.0.dylib */,
+				B338E529287D5B210021DE37 /* libffi.7.dylib */,
+				B338E533287D5B210021DE37 /* libgio-2.0.0.dylib */,
+				B338E539287D5B220021DE37 /* libglib-2.0.0.dylib */,
+				B338E537287D5B210021DE37 /* libgmodule-2.0.0.dylib */,
+				B338E52C287D5B210021DE37 /* libgobject-2.0.0.dylib */,
+				B338E53A287D5B220021DE37 /* libgstapp-1.0.0.dylib */,
+				B338E535287D5B210021DE37 /* libgstaudio-1.0.0.dylib */,
+				B338E52B287D5B210021DE37 /* libgstbase-1.0.0.dylib */,
+				B338E52D287D5B210021DE37 /* libgstreamer-1.0.0.dylib */,
+				B338E52A287D5B210021DE37 /* libgsttag-1.0.0.dylib */,
+				B338E538287D5B210021DE37 /* libgstvideo-1.0.0.dylib */,
+				B338E531287D5B210021DE37 /* libgthread-2.0.0.dylib */,
+				B338E52E287D5B210021DE37 /* libintl.8.dylib */,
+				B338E534287D5B210021DE37 /* libjpeg.8.dylib */,
+				B338E53B287D5B220021DE37 /* libopus.0.dylib */,
+				B338E52F287D5B210021DE37 /* liborc-0.4.0.dylib */,
+				B338E536287D5B210021DE37 /* libpixman-1.0.dylib */,
+				B338E530287D5B210021DE37 /* libz.1.2.11.dylib */,
+				B338E524287D312C0021DE37 /* libspiceglue.0.dylib */,
+				B338E522287D311C0021DE37 /* libspice-client-glib-2.0.8.dylib */,
+				B338E514287D2DA10021DE37 /* libcrypto.a */,
+				B338E516287D2DA10021DE37 /* libssl.a */,
+			);
+			path = LIB;
+			sourceTree = "<group>";
+		};
+		B338E565287E84B60021DE37 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B338E566287E84B60021DE37 /* GvRenderer.swift */,
+				B338E567287E84B60021DE37 /* GvMainView.swift */,
+				B338E59628852E6F0021DE37 /* SpiceView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B338E5752880F2D20021DE37 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B338E5922880FF040021DE37 /* Model */,
+				B338E5762880F2D20021DE37 /* Extension */,
+				B338E57B2880F2D20021DE37 /* Network */,
+				B338E57F2880F2D20021DE37 /* Util.swift */,
+				B338E58A2880F4450021DE37 /* CHAlertView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B338E5762880F2D20021DE37 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B338E5772880F2D20021DE37 /* NSView+Extension.swift */,
+				B338E5782880F2D20021DE37 /* NSViewController+Extension.swift */,
+				B338E5792880F2D20021DE37 /* String+Extension.swift */,
+				B338E57A2880F2D20021DE37 /* UserDefaults+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B338E57B2880F2D20021DE37 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B338E57C2880F2D20021DE37 /* GvHttpComm.swift */,
+				B338E57D2880F2D20021DE37 /* NetworkAPI.swift */,
+				B338E57E2880F2D20021DE37 /* SocketManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B338E5922880FF040021DE37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B338E5932880FF040021DE37 /* ConnectSettingModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3EE84442875624D00732129 = {
+			isa = PBXGroup;
+			children = (
+				B3EE844F2875624D00732129 /* MacSpice */,
+				B3EE844E2875624D00732129 /* Products */,
+				B3EE84A22875669C00732129 /* Frameworks */,
+				57B805993D23B35B99E862B9 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		B3EE844E2875624D00732129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3EE844D2875624D00732129 /* MacSpice.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3EE844F2875624D00732129 /* MacSpice */ = {
+			isa = PBXGroup;
+			children = (
+				B338E595288101690021DE37 /* Info.plist */,
+				B338E5752880F2D20021DE37 /* Common */,
+				B338E513287D2DA10021DE37 /* LIB */,
+				B3EE84892875663F00732129 /* src */,
+				B3EE84502875624D00732129 /* AppDelegate.swift */,
+				B3EE84522875624D00732129 /* ViewController.swift */,
+				B338E56F2880EF920021DE37 /* IntroVC.swift */,
+				B338E56D2880EE7C0021DE37 /* IntroVC.storyboard */,
+				B338E5712880F1F70021DE37 /* WebVC.swift */,
+				B338E5732880F2010021DE37 /* WebVC.storyboard */,
+				B338E58C2880FDE70021DE37 /* SpiceVC.swift */,
+				B338E58E2880FDEF0021DE37 /* SpiceVC.storyboard */,
+				B338E565287E84B60021DE37 /* View */,
+				B338E5902880FEA40021DE37 /* RdpApiManager.swift */,
+				B3EE84542875624E00732129 /* Assets.xcassets */,
+				B3EE84562875624E00732129 /* Main.storyboard */,
+				B3EE84592875624E00732129 /* MacSpice.entitlements */,
+				B338E56A287E876B0021DE37 /* MacSpice-Bridging-Header.h */,
+				B338E5882880F3580021DE37 /* Podfile */,
+			);
+			path = MacSpice;
+			sourceTree = "<group>";
+		};
+		B3EE84892875663F00732129 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				B3EE84A52875741000732129 /* KeychainItemWrapper.h */,
+				B3EE848D2875663F00732129 /* native.h */,
+				B3EE848F2875663F00732129 /* spice-mono-glue.h */,
+				B3EE84912875663F00732129 /* globals.h */,
+				B3EE84922875663F00732129 /* io_interface.h */,
+				B3EE849A2875663F00732129 /* io_interface.c */,
+				B3EE84962875663F00732129 /* SsmDelegate.h */,
+				B3EE84972875663F00732129 /* ExtSsmLib.h */,
+				B3EE84982875663F00732129 /* CommonUtil.h */,
+				B3EE848C2875663F00732129 /* CommonUtil.m */,
+				B3EE84992875663F00732129 /* spice.h */,
+				B3EE84932875663F00732129 /* spice.c */,
+				B3EE849B2875663F00732129 /* draw.h */,
+				B3EE84902875663F00732129 /* draw.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		B3EE84A22875669C00732129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3EE84A32875669C00732129 /* OpenGL.framework */,
+				ECE66C18D8390AAF1366D48E /* Pods_MacSpice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3EE844C2875624D00732129 /* MacSpice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3EE845C2875624E00732129 /* Build configuration list for PBXNativeTarget "MacSpice" */;
+			buildPhases = (
+				A00F73F84EEA50AA1C7F0CB2 /* [CP] Check Pods Manifest.lock */,
+				B3EE84492875624D00732129 /* Sources */,
+				B3EE844A2875624D00732129 /* Frameworks */,
+				B3EE844B2875624D00732129 /* Resources */,
+				B338E527287D313D0021DE37 /* Embed Libraries */,
+				7E26E96E0D03DAB9D05EE265 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacSpice;
+			productName = MacSpice;
+			productReference = B3EE844D2875624D00732129 /* MacSpice.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3EE84452875624D00732129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					B3EE844C2875624D00732129 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = B3EE84482875624D00732129 /* Build configuration list for PBXProject "MacSpice" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3EE84442875624D00732129;
+			productRefGroup = B3EE844E2875624D00732129 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3EE844C2875624D00732129 /* MacSpice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3EE844B2875624D00732129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B338E5892880F3580021DE37 /* Podfile in Resources */,
+				B338E56E2880EE7C0021DE37 /* IntroVC.storyboard in Resources */,
+				B3EE84552875624E00732129 /* Assets.xcassets in Resources */,
+				B338E5742880F2010021DE37 /* WebVC.storyboard in Resources */,
+				B338E58F2880FDEF0021DE37 /* SpiceVC.storyboard in Resources */,
+				B3EE84582875624E00732129 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E26E96E0D03DAB9D05EE265 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacSpice/Pods-MacSpice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MacSpice/Pods-MacSpice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MacSpice/Pods-MacSpice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A00F73F84EEA50AA1C7F0CB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MacSpice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3EE84492875624D00732129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B338E58B2880F4450021DE37 /* CHAlertView.swift in Sources */,
+				B338E569287E84B60021DE37 /* GvMainView.swift in Sources */,
+				B338E5872880F2D20021DE37 /* Util.swift in Sources */,
+				B3EE84A02875663F00732129 /* spice.c in Sources */,
+				B338E5912880FEA40021DE37 /* RdpApiManager.swift in Sources */,
+				B338E5942880FF040021DE37 /* ConnectSettingModel.swift in Sources */,
+				B3EE84532875624D00732129 /* ViewController.swift in Sources */,
+				B338E58D2880FDE70021DE37 /* SpiceVC.swift in Sources */,
+				B3EE849F2875663F00732129 /* draw.c in Sources */,
+				B338E59728852E6F0021DE37 /* SpiceView.swift in Sources */,
+				B338E5862880F2D20021DE37 /* SocketManager.swift in Sources */,
+				B3EE849D2875663F00732129 /* CommonUtil.m in Sources */,
+				B338E568287E84B60021DE37 /* GvRenderer.swift in Sources */,
+				B338E5832880F2D20021DE37 /* UserDefaults+Extension.swift in Sources */,
+				B338E5822880F2D20021DE37 /* String+Extension.swift in Sources */,
+				B3EE84512875624D00732129 /* AppDelegate.swift in Sources */,
+				B338E5722880F1F70021DE37 /* WebVC.swift in Sources */,
+				B338E5842880F2D20021DE37 /* GvHttpComm.swift in Sources */,
+				B3EE84A12875663F00732129 /* io_interface.c in Sources */,
+				B338E5702880EF920021DE37 /* IntroVC.swift in Sources */,
+				B338E5812880F2D20021DE37 /* NSViewController+Extension.swift in Sources */,
+				B338E5802880F2D20021DE37 /* NSView+Extension.swift in Sources */,
+				B338E5852880F2D20021DE37 /* NetworkAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3EE84562875624E00732129 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3EE84572875624E00732129 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3EE845A2875624E00732129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Debug;
+		};
+		B3EE845B2875624E00732129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_WORKSPACE = NO;
+			};
+			name = Release;
+		};
+		B3EE845D2875624E00732129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796A3C10823689B1E9EC5371 /* Pods-MacSpice.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacSpice/MacSpice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				EXCLUDED_ARCHS = arm64;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"USE_GLV=1",
+					"SUPPORT_GLOOVIR_PLATFORM=1",
+					"USE_TLS_PORT=1",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MacSpice/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MacSpice",
+					"$(PROJECT_DIR)/MacSpice/LIB",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB3",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skp.MacSpice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MacSpice/MacSpice-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		B3EE845E2875624E00732129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A4AA4426F46C1C398AAE313 /* Pods-MacSpice.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacSpice/MacSpice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				EXCLUDED_ARCHS = arm64;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MacSpice/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MacSpice",
+					"$(PROJECT_DIR)/MacSpice/LIB",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB/무제\\ 폴더",
+					"$(PROJECT_DIR)/MacSpice/LIB3",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skp.MacSpice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MacSpice/MacSpice-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3EE84482875624D00732129 /* Build configuration list for PBXProject "MacSpice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3EE845A2875624E00732129 /* Debug */,
+				B3EE845B2875624E00732129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3EE845C2875624E00732129 /* Build configuration list for PBXNativeTarget "MacSpice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3EE845D2875624E00732129 /* Debug */,
+				B3EE845E2875624E00732129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3EE84452875624D00732129 /* Project object */;
+}

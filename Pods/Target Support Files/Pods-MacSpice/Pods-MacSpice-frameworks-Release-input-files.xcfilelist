@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-MacSpice/Pods-MacSpice-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework
+${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

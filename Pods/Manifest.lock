@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.9.1)
+  - ReachabilitySwift (5.0.0)
+  - SwiftSocket (2.0.2)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (= 4.9.1)
+  - ReachabilitySwift
+  - SwiftSocket
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ReachabilitySwift
+    - SwiftSocket
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 3dd837c82e3350cbc4279de36cdd4925036c2ff8
+
+COCOAPODS: 1.11.3
